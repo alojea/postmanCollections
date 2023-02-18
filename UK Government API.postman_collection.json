@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "e9d20533-6457-48c4-a6b2-4cc1f9e821aa",
+		"name": "UK Government API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2722279"
+	},
+	"item": [
+		{
+			"name": "Content API",
+			"item": [
+				{
+					"name": "ForeignTravelAdvice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.gov.uk/api/content/foreign-travel-advice/argentina",
+							"protocol": "https",
+							"host": [
+								"www",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"content",
+								"foreign-travel-advice",
+								"argentina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VatRates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.gov.uk/api/content/vat-rates",
+							"protocol": "https",
+							"host": [
+								"www",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"content",
+								"vat-rates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Government API",
+			"item": [
+				{
+					"name": "governments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.gov.uk/api/world-locations/argentina",
+							"protocol": "https",
+							"host": [
+								"www",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"world-locations",
+								"argentina"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BankHolidays API",
+			"item": [
+				{
+					"name": "bankHolidays",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.gov.uk/bank-holidays.json/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"bank-holidays.json",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data API",
+			"item": [
+				{
+					"name": "dataSetList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://data.gov.uk/api/action/package_list",
+							"protocol": "https",
+							"host": [
+								"data",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"action",
+								"package_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "singleDataSetInformation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://data.gov.uk/api/action/package_show?id=cabinet-office-energy-use",
+							"protocol": "https",
+							"host": [
+								"data",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"action",
+								"package_show"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "cabinet-office-energy-use"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchDataSet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://data.gov.uk/api/action/package_search?fq=organization%3Acabinet-office&rows=200",
+							"protocol": "https",
+							"host": [
+								"data",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"action",
+								"package_search"
+							],
+							"query": [
+								{
+									"key": "fq",
+									"value": "organization%3Acabinet-office"
+								},
+								{
+									"key": "rows",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search API",
+			"item": [
+				{
+					"name": "basicSearch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.gov.uk/api/search.json?q=taxes",
+							"protocol": "https",
+							"host": [
+								"www",
+								"gov",
+								"uk"
+							],
+							"path": [
+								"api",
+								"search.json"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "taxes"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "country",
+			"value": "argentina"
+		}
+	]
+}
